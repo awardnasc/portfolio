@@ -1,65 +1,42 @@
-import React from "react";
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import React from 'react';
+import styles from '../styles/Home.module.css';
+import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 const Home: React.FC = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>Alex Ward</h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.js</code>
+    <div className={styles.homecontainer}>
+      <img className={styles.headshot} src={'/headshot.jpg'}/>
+      <div className={styles.neoBox}>
+        <h1 className={styles.flowText} style={{margin: '0'}}>
+          Hey! I&apos;m Alex,
+        </h1>
+        <p style={{margin: '0'}}>
+          I am a software developer and team lead currently
+          working in San Antonio, TX for the US Air Force.
+          In my current role I mostly use C and Python to build
+          Offensive Cyber Warfare tools. However, I also have
+          profesional experience in full stack web development.
+          In my spare time I am also pursuing a Masters in
+          Computer Science from the Georgia Institue of Technology.
         </p>
+        <div style={{display: 'flex', marginTop: '.5em'}}>
+          <div style={{width: '1.5em', height: '1.5em', marginRight: '.5em'}}>
+            <a href="https://github.com/awardnasc">
+              <FontAwesomeIcon className={styles.faIcon} icon={faGithub}/>
+            </a>
+          </div>
+          <div style={{width: '1.5em', height: '1.5em'}}>
+            <a href="https://www.linkedin.com/in/alex-w96">
+              <FontAwesomeIcon className={styles.faIcon} icon={faLinkedin}/>
+            </a>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          </div>
         </div>
-      </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      </div>
     </div>
+
   );
 };
 
