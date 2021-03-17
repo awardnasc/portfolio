@@ -10,7 +10,7 @@ class NavBar extends Component {
           className={styles.flowText}
           style={{marginLeft: '.5em'}}
         >
-        &lt;/&gt;
+          {/* &lt;/&gt; */}
         </h1>
       </div>
     );
