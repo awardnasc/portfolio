@@ -1,6 +1,6 @@
 import React from 'react';
 import {mount} from 'enzyme';
-import NavBar from './navbar';
+import NavBar from '../components/navbar';
 
 describe('NavBar component', () => {
   const wrap = mount(<NavBar/>);
