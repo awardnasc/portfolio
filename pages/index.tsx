@@ -6,7 +6,8 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 const Home: React.FC = () => {
   return (
     <div className={styles.homecontainer}>
-      <img className={styles.headshot} src={'/headshot.jpg'}/>
+
+      <img className={styles.headshot} src={'/headshot.jpg'} alt="headshot"/>
       <div className={styles.neoBox}>
         <h1 className={styles.flowText} style={{margin: '0'}}>
           Hey! I&apos;m Alex,
@@ -22,12 +23,12 @@ const Home: React.FC = () => {
         </p>
         <div style={{display: 'flex', marginTop: '.5em'}}>
           <div style={{width: '1.5em', height: '1.5em', marginRight: '.5em'}}>
-            <a href="https://github.com/awardnasc">
+            <a href="https://github.com/awardnasc" aria-label="Github">
               <FontAwesomeIcon className={styles.faIcon} icon={faGithub}/>
             </a>
           </div>
           <div style={{width: '1.5em', height: '1.5em'}}>
-            <a href="https://www.linkedin.com/in/alex-w96">
+            <a href="https://www.linkedin.com/in/alex-w96" aria-label="Linkedin">
               <FontAwesomeIcon className={styles.faIcon} icon={faLinkedin}/>
             </a>
 

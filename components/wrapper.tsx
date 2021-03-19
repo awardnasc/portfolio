@@ -11,19 +11,25 @@ class Wrapper extends Component {
   render() {
     const {children} = this.props;
     return (
-      <div className={styles.container}>
-        <Head>
-          <title>Alex Ward</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <NavBar/>
-        <main className={styles.main}>
-          {children}
-        </main>
-        <footer className={styles.footer}>
+      <html lang={'en'} >
+        <div className={styles.container}>
+          <Head>
+
+            <title>Alex Ward</title>
+            <link rel="icon" href="/favicon.ico" />
+            <meta name="Portfolio"
+              content="Alex Ward's proffesional portfolio detailing his development background"
+            />
+          </Head>
+          <NavBar/>
+          <main className={styles.main}>
+            {children}
+          </main>
+          <footer className={styles.footer}>
           Designed, Developed, and Deployed by Alex Ward © 2021
-        </footer>
-      </div>
+          </footer>
+        </div>
+      </html>
     );
   }
 }
