@@ -11,18 +11,14 @@ class Wrapper extends Component {
     const {children} = this.props;
     return (
       <html lang={'en'} >
-        <Head>
-          <meta name="Portfolio"
-            content="Alex Ward's proffesional portfolio detailing
-            his development background"
-          />
-        </Head>
         <div className={styles.container}>
           <Head>
-
             <title>Alex Ward</title>
             <link rel="icon" href="/favicon.ico" />
-
+            <meta name="Description"
+              content="Alex Ward's proffesional portfolio detailing
+            his development background"
+            />
           </Head>
           <NavBar/>
           <main className={styles.main}>
