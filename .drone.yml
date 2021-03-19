@@ -1,9 +1,0 @@
-kind: pipeline
-type: docker
-name: default
-
-steps:
-- name: test
-  image: node:latest
-  commands:
-  - yarn test
