@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
@@ -7,11 +8,25 @@ const Home: React.FC = () => {
   return (
     <div className={styles.homecontainer}>
 
-      <img className={styles.headshot} src={'/headshot.jpg'} alt="headshot"/>
+      <div style={{margin: '2em'}}>
+        <Image
+          className={styles.headshot}
+          width={225}
+          height={225}
+          src={'/headshot.jpg'}
+          alt="headshot"
+        />
+      </div>
       <div className={styles.neoBox}>
-        <h1 className={styles.flowText} style={{margin: '0'}}>
-          Hey! I&apos;m Alex,
-        </h1>
+        <div style={{display: 'flex'}}>
+          <h1 className={styles.flowText} style={{margin: '0'}}>
+          Hey!
+          </h1>
+          <h1 className={styles.flowText} style={{margin: '0'}}>
+            I&apos;m Alex,
+          </h1>
+        </div>
+
         <p style={{margin: '0'}}>
           I am a software developer and team lead currently
           working in San Antonio, TX for the US Air Force.
