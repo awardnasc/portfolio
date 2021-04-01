@@ -144,6 +144,8 @@
 .headshot{
    flex: 1;
   border-radius: 50%;
+  width: 288px;
+  height: 288px;
   /* max-width: 18em; */
   margin:2em;
   /* background: #e0e0e0;
