@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
-import NavBar from './navbar';
+// import NavBar from './navbar';
 import styles from '../styles/Home.module.css';
 
 /** A header and footer wrapper */
@@ -20,7 +20,7 @@ class Wrapper extends Component {
             his development background"
             />
           </Head>
-          <NavBar/>
+          {/* <NavBar/> */}
           <main className={styles.main}>
             {children}
           </main>

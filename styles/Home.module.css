@@ -9,7 +9,7 @@
 }
 
 .main {
-  padding: 5rem .5rem;
+  padding: 3rem .5rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -129,9 +129,9 @@
 .neoBox {
    flex: 1;
   max-width: 50em;
-  text-align: justify;
+  /* text-align: justify; */
   height:max-content;
-  padding: 1em;
+  padding: 0 1em 1em 1em;
   color: #131313;
   font-size: x-large;
 
@@ -144,7 +144,9 @@
 .headshot{
    flex: 1;
   border-radius: 50%;
-  max-width: 18em;
+  width: 288px;
+  height: 288px;
+  /* max-width: 18em; */
   margin:2em;
   /* background: #e0e0e0;
   box-shadow:  20px 20px 60px #bebebe,
