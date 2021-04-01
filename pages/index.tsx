@@ -18,9 +18,9 @@ const Home: React.FC = () => {
         />
       </div>
       <div className={styles.neoBox}>
-        <div style={{display: 'flex'}}>
+        <div style={{display: 'flex', flexWrap: 'wrap'}}>
           <h1 className={styles.flowText} style={{margin: '0'}}>
-          Hey!
+          Hey!&nbsp;
           </h1>
           <h1 className={styles.flowText} style={{margin: '0'}}>
             I&apos;m Alex,
