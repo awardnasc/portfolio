@@ -15,6 +15,7 @@ const Home: React.FC = () => {
           height={225}
           src={'/headshot.jpg'}
           alt="headshot"
+          priority={true}
         />
       </div>
       <div className={styles.neoBox}>
