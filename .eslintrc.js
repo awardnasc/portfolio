@@ -13,7 +13,10 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint'],
-  rules: {'require-jsdoc': 0},
+  rules: {
+    'require-jsdoc': 0,
+    'linebreak-style': 0,
+  },
   settings: {
     react: {
       version: 'detect',
