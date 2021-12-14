@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import STRING_CONSTANTS from '../components/strings';
 
 const Home: React.FC = () => {
   return (
@@ -21,21 +22,16 @@ const Home: React.FC = () => {
       <div className={styles.neoBox}>
         <div style={{display: 'flex', flexWrap: 'wrap'}}>
           <h1 className={styles.flowText} style={{margin: '0'}}>
-          Hey!&nbsp;
+            {STRING_CONSTANTS.GREETING}
+            &nbsp;
           </h1>
           <h1 className={styles.flowText} style={{margin: '0'}}>
-            I&apos;m Alex,
+            {STRING_CONSTANTS.INTRO}
           </h1>
         </div>
 
         <p style={{margin: '0'}}>
-          I am a software developer and team lead currently
-          working in San Antonio, TX for the US Air Force.
-          In my current role I mostly use C and Python to build
-          Offensive Cyber Warfare tools. However, I also have
-          profesional experience in full stack web development.
-          In my spare time I am also pursuing a Masters in
-          Computer Science from the Georgia Institue of Technology.
+          {STRING_CONSTANTS.BIO}
         </p>
         <div style={{display: 'flex', marginTop: '.5em'}}>
           <div style={{width: '1.5em', height: '1.5em', marginRight: '.5em'}}>
