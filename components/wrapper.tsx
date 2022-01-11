@@ -25,7 +25,7 @@ class Wrapper extends Component {
             {children}
           </main>
           <footer className={styles.footer}>
-          Designed and Developed by Alex Ward © 2021
+          Designed and Developed by Alex Ward © 2022
           </footer>
         </div>
       </html>
