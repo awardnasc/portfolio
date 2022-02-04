@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
-// import NavBar from './navbar';
 import styles from '../styles/Home.module.css';
 
 /** A header and footer wrapper */
@@ -16,7 +15,7 @@ class Wrapper extends Component {
             <title>Alex Ward</title>
             <link rel="icon" href="/favicon.ico" />
             <meta name="Description"
-              content="Alex Ward's proffesional portfolio detailing
+              content="Alex Ward's professional portfolio detailing
             his development background"
             />
           </Head>
