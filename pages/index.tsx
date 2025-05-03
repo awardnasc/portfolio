@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import styles from '../styles/Home.module.css';
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
@@ -9,7 +9,6 @@ import {faFileAlt} from '@fortawesome/free-solid-svg-icons/faFileAlt';
 const Home: React.FC = () => {
   return (
     <div className={styles.homecontainer}>
-
       <div style={{margin: '2em'}}>
         <Image
           className={styles.headshot}
@@ -18,7 +17,10 @@ const Home: React.FC = () => {
           src={'/headshot.jpg'}
           alt="headshot"
           priority={true}
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </div>
       <div className={styles.neoBox}>
         <div style={{display: 'flex', flexWrap: 'wrap'}}>
@@ -59,7 +61,6 @@ const Home: React.FC = () => {
 
       </div>
     </div>
-
   );
 };
 
