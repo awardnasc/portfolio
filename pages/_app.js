@@ -6,14 +6,14 @@ import PropTypes from 'prop-types';
 function MyApp({Component, pageProps}) {
   return (
     <Wrapper>
-        <Component {...pageProps} />
+      <Component {...pageProps} />
     </Wrapper>
   );
 }
 
 MyApp.propTypes = {
-  Component: PropTypes.any,
-  pageProps: PropTypes.any,
+  Component: PropTypes.elementType.isRequired,
+  pageProps: PropTypes.object.isRequired,
 };
 
 export default MyApp;
