@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 function MyApp({Component, pageProps}) {
   return (
     <Wrapper>
-      <Component {...pageProps} />
+        <Component {...pageProps} />
     </Wrapper>
   );
 }
