@@ -1,11 +1,5 @@
 const STRING_CONSTANTS = {
-  BIO: 'I am a software developer and team lead currently ' +
-        'working in San Antonio, TX for the US Air Force. ' +
-        'In my current role I mostly use C and Python to build ' +
-        'Offensive Cyber Warfare tools. However, I also have ' +
-        'professional experience in full stack web development. ' +
-        'In my spare time I am also pursuing a Masters in ' +
-        'Computer Science from the Georgia Institute of Technology. ',
+  BIO: 'I’m an engineering manager who enjoys building teams and systems that deliver. I’ve led distributed groups across the U.S. and Mexico, driven multi-team launches at Amazon, and built high-scale, high-reliability platforms in both the private sector and the Air Force.',
   GREETING: 'Hey!',
   INTRO: ' I\'m Alex,',
 };
